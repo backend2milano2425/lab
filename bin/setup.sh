@@ -19,8 +19,8 @@ echo -e "${BLUE}Exporting kubeconfig...${NC}"
 # Export kubeconfig
 mkdir -p $HOME/.kube
 mkdir -p $HOME/.kube/clusters
-mkdir -p $HOME/.kube/clusters/xpipe-lab
-touch $HOME/.kube/clusters/xpipe-lab/kubeconfig
+mkdir -p $HOME/.kube/clusters/lab
+touch $HOME/.kube/clusters/lab/kubeconfig
 docker exec -it ${CONTAINER_NAME} cat /etc/kubernetes/admin.conf > $HOME/.kube/clusters/lab/kubeconfig
 echo
 
